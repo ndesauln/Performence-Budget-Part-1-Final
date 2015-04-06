@@ -1,0 +1,39 @@
+/* Globals.scss */
+
+
+
+$color: #262626;
+$background-color: #fff;
+$base-font-size: 22px;
+$logo-color: #6e6e6e;
+$line-height: 1.45;
+
+@function em($px, $base: $base-font-size) {
+    @return($px / $base) * 1em;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700,400italic,900);
+
+@mixin body-font{
+font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin body-font-bold{
+    font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin body-font-italic{
+  font-family: 'Alegreya Sans';
+  font-style: italic;
+  font-weight: 400;
+}
+
+@mixin headline-font{
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 900;
+}   
